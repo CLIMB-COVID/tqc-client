@@ -1,0 +1,8 @@
+name: tqc-client
+channels:
+  - defaults
+dependencies:
+  - pip
+  - pip:
+    - requests
+    - pandas
