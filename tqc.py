@@ -221,7 +221,6 @@ def add(url, api_key, tsv_path, print_uploads=True):
 
 
 def make_query_params(args, pag_defaults=True):
-
     if pag_defaults == True:
         # Default for pag_suppressed
         if args.get('pag_suppressed') is None:
@@ -274,7 +273,6 @@ def make_query_params(args, pag_defaults=True):
 
         # Handle date range arguments (all dates within two dates, inclusive)
         elif arg in date_range_args:
-            # TODO: test
             if value[0].lower() == 'today':
                 start_date = datetime.today().date()
             else:
